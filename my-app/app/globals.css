@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* global.css */
+.container-header {
+  @apply text-2xl font-semibold text-white bg-teal-500 p-3 rounded-md mb-6 text-start;
+}
+
+label {
+  @apply block text-sm font-medium text-gray-700 mb-1;
+}
+
+input {
+  @apply w-full p-2 border border-gray-300 rounded-lg mb-4 focus:outline-none focus:ring-2 focus:ring-teal-500;
+}
+
+select {
+  @apply w-full p-2 border border-gray-300 rounded-lg mb-4 focus:outline-none focus:ring-2 focus:ring-teal-500;
+}
+
+
+/* สไตล์ตาราง */
+table {
+  @apply w-full text-sm text-left text-gray-800 border border-gray-900 rounded-lg overflow-hidden mt-3;
+}
+
+thead {
+  @apply bg-teal-500 text-white;
+}
+
+th,
+td {
+  @apply px-4 py-2 border-b border-gray-200;
+}
+
+th {
+  @apply font-semibold;
+}
+
+tbody tr:hover {
+  @apply bg-gray-100;
+}
+
+tbody tr {
+  @apply odd:bg-white even:bg-teal-50 hover:bg-gray-200;
+}
+
+/* ซ่อน scrollbar สำหรับ WebKit (Chrome, Edge, Safari) */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* สำหรับ Firefox */
+.scrollbar-hide {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+
+/* ปุ่ม Action */
+.btn-edit {
+  @apply text-white bg-blue-500 hover:bg-blue-700 mx-1 p-2 rounded-md transition;
+}
+
+.btn-delete {
+  @apply text-white bg-red-500 hover:bg-red-700 mx-1 p-2 rounded-md transition;
+}
+
+.btn-save {
+  @apply flex items-center gap-2 text-white bg-teal-500 hover:bg-teal-700 mx-1 p-2 rounded-md transition;
+}
+
+.btn-plus {
+  @apply flex items-center gap-2 text-white bg-teal-500 hover:bg-teal-700 mx-1 p-2 rounded-md transition;
+}
+
+
+/* Responsive column for Action */
+.w-\[100px\] {
+  width: 100px;
+}
